@@ -4,7 +4,6 @@
 <head>
     <title>Rory Wood - Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
@@ -33,16 +32,15 @@
             <div class="card-content card-front">
                 <img src="assets/profile-picture.jpg" alt="Profile Icon">
                 <div class="card-content-right">
-                    <div>
+                    <div class="card-info">
                         <h1>Rory Wood</h1>
-                        <p>Siena College</p>
+                        <h2>Software Engineering Student</h2>
+                        <p>Bangor, Northern Ireland • New York, United States</p>
+                        <p>Email: rorywood9@live.com</p>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/Rory3140" target=”_blank”>
                             <i class="devicon-github-original"></i>
-                        </a>
-                        <a href="mailto:rorywood9@live.com" target=”_blank”>
-                            <i class="fa fa-envelope"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/rory-s-wood/" target=”_blank”>
                             <i class="devicon-linkedin-plain"></i>
@@ -52,31 +50,6 @@
             </div>
 
             <div class="card-content card-back">
-                <div class="coding-content java">
-                    <div>
-                        <h2>Java</h2>
-                        <i class="devicon-java-plain-wordmark colored"></i>
-                    </div>
-                    <p>
-                        I have been coding in Java for over six years now making it the programming
-                        language that I am most proficient in. Over the years I have completed numerous
-                        projects using Java. These have ranged from simple and advanced algorithms to a
-                        quiz application completed using Java Swing which boasted a comprehensive login
-                        and registration as well as seamless integration with a back-end database.
-                    </p>
-                </div>
-                <div class="coding-content php">
-                    <div>
-                        <h2>PHP</h2>
-                        <i class="devicon-php-plain colored"></i>
-                    </div>
-                    <p>
-                        I gained proficiency in PHP through self-study. After learning the fundamentals
-                        of HTML, CSS, and JavaScript in my web development course, I took on numerous
-                        projects that demanded dynamic website functionality, thus necessitating the
-                        utilization of PHP for coding purposes.
-                    </p>
-                </div>
                 <div class="coding-content javascript">
                     <div>
                         <h2>Javascript</h2>
@@ -95,10 +68,22 @@
                         <i class="devicon-react-plain colored"></i>
                     </div>
                     <p>
-                        I have been using React for over a year now and have completed numerous projects
-                        using the framework. I have found React to be an incredibly powerful tool for
-                        creating dynamic and responsive web applications and have enjoyed using it to
-                        create a variety of projects.
+                        I have completed numerous projects using the both the React and React Native.
+                        I have found React to be an incredibly powerful tool forcreating dynamic and
+                        responsive web and mobile applications.
+                </div>
+                <div class="coding-content java">
+                    <div>
+                        <h2>Java</h2>
+                        <i class="devicon-java-plain-wordmark colored"></i>
+                    </div>
+                    <p>
+                        I have been coding in Java since I was 13 making it the programming
+                        language that I am most proficient in. Over the years I have completed numerous
+                        projects using Java. These have ranged from simple and advanced algorithms to a
+                        quiz application completed using Java Swing which boasted a comprehensive login
+                        and registration as well as seamless integration with a back-end database.
+                    </p>
                 </div>
                 <div class="coding-content python">
                     <div>
@@ -106,9 +91,9 @@
                         <i class="devicon-python-plain colored"></i>
                     </div>
                     <p>
-                        I picked up Python myself at secondary school and continued it in university in a
-                        robotics class.I enjoy using Python for web automation and creating customized
-                        scripts to streamline processes.
+                        I picked up Python myself at secondary school and continued it in university for
+                        machine learning and robotics. I have also used Python for web automation and
+                        creating customized scripts to streamline processes.
                     </p>
                 </div>
                 <div class="coding-content c">
@@ -123,6 +108,18 @@
                         skills in creative and practical ways.
                     </p>
                 </div>
+                <div class="coding-content php">
+                    <div>
+                        <h2>PHP</h2>
+                        <i class="devicon-php-plain colored"></i>
+                    </div>
+                    <p>
+                        I gained proficiency in PHP through self-study. After learning the fundamentals
+                        of HTML, CSS, and JavaScript in my web development course, I took on numerous
+                        projects that demanded dynamic website functionality, thus necessitating the
+                        utilization of PHP for coding purposes.
+                    </p>
+                </div>
                 <div class="return-button" onclick="flip()">
                     <i class="fa fa-arrow-left"></i>
                 </div>
@@ -130,12 +127,12 @@
         </div>
 
         <div class="language-icons">
-            <div id="java" onclick="flipCard(this)"><i class="devicon-java-plain"></i></div>
-            <div id="php" onclick="flipCard(this)"><i class="devicon-php-plain"></i></div>
             <div id="javascript" onclick="flipCard(this)"><i class="devicon-javascript-plain"></i></div>
             <div id="react" onclick="flipCard(this)"><i class="devicon-react-plain"></i></div>
+            <div id="java" onclick="flipCard(this)"><i class="devicon-java-plain"></i></div>
             <div id="python" onclick="flipCard(this)"><i class="devicon-python-plain"></i></div>
             <div id="c" onclick="flipCard(this)"><i class="devicon-c-plain"></i></div>
+            <div id="php" onclick="flipCard(this)"><i class="devicon-php-plain"></i></div>
         </div>
         <div class="scroll-button" onclick="scrollAbove('about-me')">
             <div class="scroll-icon"></div>
@@ -148,18 +145,21 @@
             <p>
                 I am an enthusiastic, outgoing, and positive person with an eagerness to learn and
                 embrace new challenges. I have had a passion for computers and technology for as long
-                as I can remember - since learning Java eight years ago I have been captivated by the
-                sense of creative freedom and the opportunity for critical thinking that Development
-                and Coding provides. This has driven me to not only pursue a career in this field but
-                also to teach myself various essential languages, expanding my understanding and
-                knowledge.<br>
+                as I can remember - since learning the basics of Java when I was 13, I have been
+                captivated by the sense of creative freedom and the opportunity for critical thinking
+                that Development and Coding provides. This has driven me to not only pursue a career in
+                this field but also to teach myself various essential languages, expanding my
+                understanding and knowledge.
+                <br>
 
-                <br>While coding is my true passion, I am far from a typical Computer Science student.
-                I am also an avid rugby player, having represented my country with Ireland U19 and
+                <br>
+                While coding is my true passion, I am far from a typical Computer Science student. I am
+                also an avid rugby player, having represented my country with Ireland U19 and
                 currently playing for both my university at Division 1 level and the New York Major
-                League Rugby Academy. My experience in rugby has taught me invaluable lessons in teamwork,
-                perseverance, and leadership, all of which I bring to the table when working with others
-                on coding projects.
+                League Rugby Academy. My experience in rugby has taught me invaluable lessons in
+                teamwork, perseverance, and leadership, all of which I bring to the table when working
+                with others on coding projects.
+
             </p>
         </div>
 
@@ -168,14 +168,16 @@
 
             <h3>Siena College, New York</h3>
             <p>
-                I am currently in my junior year studying at Siena College where I have been awarded
-                both an Academic and a Sports Scholarship and have made the Dean's list twice in the
-                past two years. I am working towards a bachelor's degree in computer science with a
-                primary focus on software development and alongside this I am also minoring in business.
+                I am currently in my senior year studying at Siena College where I have been awarded
+                both an Academic and a Sports Scholarship and have made the President's List and
+                the Dean's list twice. I am working towards a bachelor's degree in computer science with
+                a primary focus on software engineering and alongside this I am also minoring in
+                business.
             </p>
             <h4>Computer Science Classes</h4>
             <div class="long-list">
                 <ul>
+                    <li>Software Development</li>
                     <li>Web Development</li>
                     <li>Web Design</li>
                     <li>Advanced Programming</li>
@@ -197,9 +199,9 @@
             <div class="spacer"></div>
             <h3>Bangor Grammar School, Northern Ireland</h3>
             <p>
-                Prior to college I attended Bangor Grammar School where I began
-                studying Computer Science at GCSE level and continued it into my
-                A-Levels where I achieved an A* Grade.
+                Prior to college I attended Bangor Grammar School where I began studying Computer
+                Science at GCSE level and continued it into my A-Levels where I achieved an A*
+                Grade.
             </p>
             <div class="spacer"></div>
         </div>
@@ -211,46 +213,23 @@
                 Student Assistant - Siena College Computer Science Department
             </h3>
             <h4>2022 - Present</h4>
-            <p>
-                While at college I have an on-campus job in the computer science
-                department where I assist the professors in a diverse range of
-                tasks such as conducting research and providing guidance to fellow
-                students through tutoring sessions.
-            </p>
+            <ul>
+                <li>Currently at college I have an on-campus job in the computer science department.</li>
+                <li>Consists of assisting professors in a diverse range of tasks such as conducting research and
+                    preparing material
+                    for classes.</li>
+            </ul>
             <div class="spacer"></div>
             <h3>
                 Student Tutor - Siena College Computer Science Department
             </h3>
             <h4>2023 - Present</h4>
-            <p>
-                At college I also have another on-campus job as a student tutor for
-                the Advanced Programming and Intro to Java classes in the computer
-                science department after being recommended for the job by my professors.
-                The job mainly consists of students from these classes booking
-                appointments with me and I assist the students with work and explain
-                various concepts to them.
-            </p>
-            <div class="spacer"></div>
-            <h3>Telephone Interviewer - Mango Direct Marketing, Bangor</h3>
-            <h4>2022</h4>
-            <p>
-                I worked with various clients and customers in an office
-                environment where I was conducting marketing/research surveys and
-                promoting a variety of products to new and existing clients.
-                Through this experience, I was able to refine my sales techniques
-                and customer service skills while also gaining a deeper
-                understanding of the marketing strategies and business practices
-                required to succeed in a competitive market.
-            </p>
-            <div class="spacer"></div>
-            <h3>Floor Staff/Bar Staff - The Stables, Groomsport</h3>
-            <h4>2019 - 2021</h4>
-            <p>
-                This includes all areas of customer service in a busy restaurant
-                including taking orders, serving, preparing bills and taking
-                payment. Also includes checking stock and dealing with customer
-                complaints or issues.
-            </p>
+            <ul>
+                <li> Currently also have another on-campus job as a student tutor for the Advanced Programming, Intro to
+                    Java
+                    and Web Design classes after being recommended for the job by my professors.</li>
+                <li>Consists of assisting students with work and explaining various concepts to them.</li>
+            </ul>
             <div class="spacer"></div>
         </div>
 
