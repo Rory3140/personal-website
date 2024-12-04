@@ -134,7 +134,7 @@ footer p {
 .card {
     width: 45vw;
     max-width: 800px;
-    min-width: 400px;
+    min-width: 350px;
     height: 250px;
     border-radius: 10px;
     margin: 20px;
@@ -193,7 +193,8 @@ footer p {
 }
 
 .card-content p {
-    margin: 0;
+    font-size: 1em;
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -277,7 +278,7 @@ footer p {
 
 .social-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     margin-top: 20px;
 }
@@ -290,7 +291,7 @@ footer p {
     background-color: #B6B6B6;
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
     cursor: pointer;
@@ -461,6 +462,7 @@ footer p {
 
     .social-links {
         width: 50%;
+        justify-content: center;
     }
 
     .social-links a {
@@ -475,6 +477,7 @@ footer p {
     .language-icons div {
         width: 30px;
         height: 30px;
+        margin: 0px 5px;
     }
 
     .language-icons div i {
@@ -487,9 +490,10 @@ footer p {
 
 }
 
-@media screen and (max-width: 550px) and (min-height: 650px) {
-    header {
-        height: calc(100vh - 150px);
+@media screen and (max-width: 500px) {
+
+    .card-content p {
+        font-size: 0.75em;
     }
 
 }
