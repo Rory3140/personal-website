@@ -28,112 +28,115 @@
     </div>
 
     <header>
-        <div class="card">
-            <div class="card-content card-front">
-                <img src="assets/profile-picture.jpg" alt="Profile Icon">
-                <div class="card-content-right">
-                    <div class="card-info">
-                        <h1>Rory Wood</h1>
-                        <h2>Software Engineering Student</h2>
-                        <p>Bangor, Northern Ireland • New York, United States</p>
-                        <p>Email: rorywood9@live.com</p>
+        <div class="header-background">
+            <div class="card">
+                <div class="card-content card-front">
+                    <img src="assets/profile-picture.jpg" alt="Profile Icon">
+                    <div class="card-content-right">
+                        <div class="card-info">
+                            <h1>Rory Wood</h1>
+                            <h2>Software Engineering Student</h2>
+                            <p>Bangor, Northern Ireland • New York, United States</p>
+                            <p>Email: rorywood9@live.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Rory3140" target=”_blank”>
+                                <i class="devicon-github-original"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rory-s-wood/" target=”_blank”>
+                                <i class="devicon-linkedin-plain"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Rory3140" target=”_blank”>
-                            <i class="devicon-github-original"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rory-s-wood/" target=”_blank”>
-                            <i class="devicon-linkedin-plain"></i>
-                        </a>
+                </div>
+
+                <div class="card-content card-back">
+                    <div class="coding-content javascript">
+                        <div>
+                            <h2>Javascript</h2>
+                            <i class="devicon-javascript-plain colored"></i>
+                        </div>
+                        <p>
+                            I first gained exposure to JavaScript in my web development class at university
+                            where I learned the fundamentals of the language and the basics of the React
+                            framework. Since then, I have taught myself more advanced aspects of JavaScript
+                            to complete various front-end and back-end projects.
+                        </p>
+                    </div>
+                    <div class="coding-content react">
+                        <div>
+                            <h2>React</h2>
+                            <i class="devicon-react-plain colored"></i>
+                        </div>
+                        <p>
+                            I have completed numerous projects using the both the React and React Native.
+                            I have found React to be an incredibly powerful tool forcreating dynamic and
+                            responsive web and mobile applications.
+                    </div>
+                    <div class="coding-content java">
+                        <div>
+                            <h2>Java</h2>
+                            <i class="devicon-java-plain-wordmark colored"></i>
+                        </div>
+                        <p>
+                            I have been coding in Java since I was 13 making it the programming
+                            language that I am most proficient in. Over the years I have completed numerous
+                            projects using Java. These have ranged from simple and advanced algorithms to a
+                            quiz application completed using Java Swing which boasted a comprehensive login
+                            and registration as well as seamless integration with a back-end database.
+                        </p>
+                    </div>
+                    <div class="coding-content python">
+                        <div>
+                            <h2>Python</h2>
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <p>
+                            I picked up Python myself at secondary school and continued it in university for
+                            machine learning and robotics. I have also used Python for web automation and
+                            creating customized scripts to streamline processes.
+                        </p>
+                    </div>
+                    <div class="coding-content c">
+                        <div>
+                            <h2>C/C++</h2>
+                            <i class="devicon-c-plain colored"></i>
+                        </div>
+                        <p>
+                            Through self-teaching I have gained a strong understanding of C++ and its similarities
+                            to C have allowed me to quickly adapt to coding at a high level. I have used C++ mainly
+                            for developing applications and game development which has allowed me to utilize my
+                            skills in creative and practical ways.
+                        </p>
+                    </div>
+                    <div class="coding-content php">
+                        <div>
+                            <h2>PHP</h2>
+                            <i class="devicon-php-plain colored"></i>
+                        </div>
+                        <p>
+                            I gained proficiency in PHP through self-study. After learning the fundamentals
+                            of HTML, CSS, and JavaScript in my web development course, I took on numerous
+                            projects that demanded dynamic website functionality, thus necessitating the
+                            utilization of PHP for coding purposes.
+                        </p>
+                    </div>
+                    <div class="return-button" onclick="flip()">
+                        <i class="fa fa-arrow-left"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="card-content card-back">
-                <div class="coding-content javascript">
-                    <div>
-                        <h2>Javascript</h2>
-                        <i class="devicon-javascript-plain colored"></i>
-                    </div>
-                    <p>
-                        I first gained exposure to JavaScript in my web development class at university
-                        where I learned the fundamentals of the language and the basics of the React
-                        framework. Since then, I have taught myself more advanced aspects of JavaScript
-                        to complete various front-end and back-end projects.
-                    </p>
-                </div>
-                <div class="coding-content react">
-                    <div>
-                        <h2>React</h2>
-                        <i class="devicon-react-plain colored"></i>
-                    </div>
-                    <p>
-                        I have completed numerous projects using the both the React and React Native.
-                        I have found React to be an incredibly powerful tool forcreating dynamic and
-                        responsive web and mobile applications.
-                </div>
-                <div class="coding-content java">
-                    <div>
-                        <h2>Java</h2>
-                        <i class="devicon-java-plain-wordmark colored"></i>
-                    </div>
-                    <p>
-                        I have been coding in Java since I was 13 making it the programming
-                        language that I am most proficient in. Over the years I have completed numerous
-                        projects using Java. These have ranged from simple and advanced algorithms to a
-                        quiz application completed using Java Swing which boasted a comprehensive login
-                        and registration as well as seamless integration with a back-end database.
-                    </p>
-                </div>
-                <div class="coding-content python">
-                    <div>
-                        <h2>Python</h2>
-                        <i class="devicon-python-plain colored"></i>
-                    </div>
-                    <p>
-                        I picked up Python myself at secondary school and continued it in university for
-                        machine learning and robotics. I have also used Python for web automation and
-                        creating customized scripts to streamline processes.
-                    </p>
-                </div>
-                <div class="coding-content c">
-                    <div>
-                        <h2>C/C++</h2>
-                        <i class="devicon-c-plain colored"></i>
-                    </div>
-                    <p>
-                        Through self-teaching I have gained a strong understanding of C++ and its similarities
-                        to C have allowed me to quickly adapt to coding at a high level. I have used C++ mainly
-                        for developing applications and game development which has allowed me to utilize my
-                        skills in creative and practical ways.
-                    </p>
-                </div>
-                <div class="coding-content php">
-                    <div>
-                        <h2>PHP</h2>
-                        <i class="devicon-php-plain colored"></i>
-                    </div>
-                    <p>
-                        I gained proficiency in PHP through self-study. After learning the fundamentals
-                        of HTML, CSS, and JavaScript in my web development course, I took on numerous
-                        projects that demanded dynamic website functionality, thus necessitating the
-                        utilization of PHP for coding purposes.
-                    </p>
-                </div>
-                <div class="return-button" onclick="flip()">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
+            <div class="language-icons">
+                <div id="javascript" onclick="flipCard(this)"><i class="devicon-javascript-plain"></i></div>
+                <div id="react" onclick="flipCard(this)"><i class="devicon-react-plain"></i></div>
+                <div id="java" onclick="flipCard(this)"><i class="devicon-java-plain"></i></div>
+                <div id="python" onclick="flipCard(this)"><i class="devicon-python-plain"></i></div>
+                <div id="c" onclick="flipCard(this)"><i class="devicon-c-plain"></i></div>
+                <div id="php" onclick="flipCard(this)"><i class="devicon-php-plain"></i></div>
             </div>
         </div>
-
-        <div class="language-icons">
-            <div id="javascript" onclick="flipCard(this)"><i class="devicon-javascript-plain"></i></div>
-            <div id="react" onclick="flipCard(this)"><i class="devicon-react-plain"></i></div>
-            <div id="java" onclick="flipCard(this)"><i class="devicon-java-plain"></i></div>
-            <div id="python" onclick="flipCard(this)"><i class="devicon-python-plain"></i></div>
-            <div id="c" onclick="flipCard(this)"><i class="devicon-c-plain"></i></div>
-            <div id="php" onclick="flipCard(this)"><i class="devicon-php-plain"></i></div>
-        </div>
+        
         <div class="scroll-button" onclick="scrollAbove('about-me')">
             <div class="scroll-icon"></div>
         </div>
