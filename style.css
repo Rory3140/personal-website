@@ -12,8 +12,15 @@ body {
     color: #333;
     width: 100%;
     min-height: 100vh;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
 }
 
 header {
@@ -159,10 +166,6 @@ footer p {
     transition: transform 1s;
 }
 
-.card.is-flipped {
-    transform: rotateY(-180deg);
-}
-
 .card-content {
     position: absolute;
     height: 100%;
@@ -193,13 +196,6 @@ footer p {
 .card-content h1 {
     font-size: 2em;
     margin: 0;
-    margin-bottom: 10px;
-}
-
-.card-content h2 {
-    font-size: 1.5em;
-    margin: 0;
-    margin-bottom: 5px;
 }
 
 .card-content p {
@@ -213,8 +209,22 @@ footer p {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+}
+
+.card-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #8A8A8A;
+}
+
+.card-info p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #8A8A8A;
 }
 
 .card-front {
@@ -226,75 +236,15 @@ footer p {
     justify-content: center;
 }
 
-.card-front,
-.card-back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden;
-}
-
-.card-back {
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    transform: rotateY(180deg);
-}
-
-.coding-content {
-    display: none;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    animation: fadeIn 1s;
-}
-
-.coding-content div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.coding-content i {
-    font-size: 3em;
-    margin: 20px;
-}
-
-.coding-content p {
-    padding: 10px;
-}
-
-.return-button {
-    margin-top: auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    color: white;
-    background-color: #553cf7;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-.return-button:hover {
-    opacity: 0.75;
-}
-
 .social-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     margin-top: 20px;
 }
 
 .social-links a {
-    width: 1.5em;
+    width: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,29 +270,6 @@ footer p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.language-icons div {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #553cf7;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0px 10px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-.language-icons div:hover {
-    opacity: 0.75;
-}
-
-.language-icons div i {
-    font-size: 3em;
 }
 
 .scroll-button {
@@ -425,6 +352,113 @@ footer p {
     align-self: flex-start;
 }
 
+.project-carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.project-card {
+    flex: 0 0 calc(33.333% - 20px);
+    min-width: 200px;
+    height: 450px;
+    background-color: white;
+    border-bottom: 5px solid #553cf7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    scroll-snap-align: center;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project-description {
+    height: 120px; 
+    overflow: hidden;
+}
+
+
+.carousel-button {
+    background-color:transparent;
+    color: #553cf7;
+    font-size: 2em;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #E5E5E5;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.project-image {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #553cf7;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: #3e2cc7;
+}
+
+.hidden-button {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .spacer {
     content: "";
     background-color: #553cf7;
@@ -485,16 +519,6 @@ footer p {
     }
 
     .social-links a i {
-        font-size: 1.5em;
-    }
-
-    .language-icons div {
-        width: 30px;
-        height: 30px;
-        margin: 0px 5px;
-    }
-
-    .language-icons div i {
         font-size: 1.5em;
     }
 

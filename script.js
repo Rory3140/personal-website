@@ -39,33 +39,14 @@ function scrollAbove(id) {
   window.scrollTo(window.scrollX, dims.top + window.scrollY - margin);
 }
 
-// ---------------- Card Flip ----------------
-var card = document.querySelector(".card");
-var codingContent = document.querySelectorAll(".coding-content");
-var previous = null;
-var flipped = false;
+// ---------------- Projects ----------------
+let scrollIndex = 0;
+const track = document.getElementById('carousel-track');
+const scrollAmount = track.offsetWidth * 0.35;
 
-function flipCard(element) {
-  var newCard = document.querySelector("." + element.id);
-  if (newCard === previous) {
-    flip();
-    return;
-  }
-
-  if (!flipped) {
-    previous = null;
-    flip();
-  }
-
-  for (let i = 0; i < codingContent.length; i++) {
-    codingContent[i].style.display = "none";
-  }
-
-  newCard.style.display = "flex";
-  previous = newCard;
-}
-
-function flip() {
-  card.classList.toggle("is-flipped");
-  flipped = !flipped;
+function scrollCarousel(direction) {
+    track.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
 }

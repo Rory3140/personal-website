@@ -22,8 +22,8 @@
 
     <div id="nav-menu">
         <a class="button" onclick="scrollAbove('about-me')">About Me</a>
-        <a class="button" onclick="scrollAbove('education')">Education</a>
-        <a class="button" onclick="scrollAbove('work-experience')">Work Experience</a>
+        <a class="button" onclick="scrollAbove('projects')">Projects</a>
+        <a class="button" onclick="scrollAbove('resume')">Resume</a>
         <a class="button" onclick="scrollAbove('contact')">Contact</a>
     </div>
 
@@ -31,13 +31,13 @@
         <div class="header-background">
             <div class="card">
                 <div class="card-content card-front">
-                    <img src="assets/profile-picture.jpg" alt="Profile Icon">
+                    <img src="assets/LinkedIn-Portrait.png" alt="Profile Icon">
                     <div class="card-content-right">
                         <div class="card-info">
                             <h1>Rory Wood</h1>
-                            <h2>Software Engineering Student</h2>
+                            <div style="border-bottom: 3px solid #553cf7; width: 200px; margin: 10px 0;"></div>
+                            <h2>Software Engineer</h2>
                             <p>Bangor, Northern Ireland • New York, United States</p>
-                            <p>Email: rorywood9@live.com</p>
                         </div>
                         <div class="social-links">
                             <a href="https://github.com/Rory3140" target=”_blank”>
@@ -46,94 +46,12 @@
                             <a href="https://www.linkedin.com/in/rory-s-wood/" target=”_blank”>
                                 <i class="devicon-linkedin-plain"></i>
                             </a>
+                            <a href="mailto:rorywood9@live.com" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="card-content card-back">
-                    <div class="coding-content javascript">
-                        <div>
-                            <h2>Javascript</h2>
-                            <i class="devicon-javascript-plain colored"></i>
-                        </div>
-                        <p>
-                            I first gained exposure to JavaScript in my web development class at university
-                            where I learned the fundamentals of the language and the basics of the React
-                            framework. Since then, I have taught myself more advanced aspects of JavaScript
-                            to complete various front-end and back-end projects.
-                        </p>
-                    </div>
-                    <div class="coding-content react">
-                        <div>
-                            <h2>React</h2>
-                            <i class="devicon-react-plain colored"></i>
-                        </div>
-                        <p>
-                            I have completed numerous projects using the both the React and React Native.
-                            I have found React to be an incredibly powerful tool forcreating dynamic and
-                            responsive web and mobile applications.
-                    </div>
-                    <div class="coding-content java">
-                        <div>
-                            <h2>Java</h2>
-                            <i class="devicon-java-plain-wordmark colored"></i>
-                        </div>
-                        <p>
-                            I have been coding in Java since I was 13 making it the programming
-                            language that I am most proficient in. Over the years I have completed numerous
-                            projects using Java. These have ranged from simple and advanced algorithms to a
-                            quiz application completed using Java Swing which boasted a comprehensive login
-                            and registration as well as seamless integration with a back-end database.
-                        </p>
-                    </div>
-                    <div class="coding-content python">
-                        <div>
-                            <h2>Python</h2>
-                            <i class="devicon-python-plain colored"></i>
-                        </div>
-                        <p>
-                            I picked up Python myself at secondary school and continued it in university for
-                            machine learning and robotics. I have also used Python for web automation and
-                            creating customized scripts to streamline processes.
-                        </p>
-                    </div>
-                    <div class="coding-content c">
-                        <div>
-                            <h2>C/C++</h2>
-                            <i class="devicon-c-plain colored"></i>
-                        </div>
-                        <p>
-                            Through self-teaching I have gained a strong understanding of C++ and its similarities
-                            to C have allowed me to quickly adapt to coding at a high level. I have used C++ mainly
-                            for developing applications and game development which has allowed me to utilize my
-                            skills in creative and practical ways.
-                        </p>
-                    </div>
-                    <div class="coding-content php">
-                        <div>
-                            <h2>PHP</h2>
-                            <i class="devicon-php-plain colored"></i>
-                        </div>
-                        <p>
-                            I gained proficiency in PHP through self-study. After learning the fundamentals
-                            of HTML, CSS, and JavaScript in my web development course, I took on numerous
-                            projects that demanded dynamic website functionality, thus necessitating the
-                            utilization of PHP for coding purposes.
-                        </p>
-                    </div>
-                    <div class="return-button" onclick="flip()">
-                        <i class="fa fa-arrow-left"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="language-icons">
-                <div id="javascript" onclick="flipCard(this)"><i class="devicon-javascript-plain"></i></div>
-                <div id="react" onclick="flipCard(this)"><i class="devicon-react-plain"></i></div>
-                <div id="java" onclick="flipCard(this)"><i class="devicon-java-plain"></i></div>
-                <div id="python" onclick="flipCard(this)"><i class="devicon-python-plain"></i></div>
-                <div id="c" onclick="flipCard(this)"><i class="devicon-c-plain"></i></div>
-                <div id="php" onclick="flipCard(this)"><i class="devicon-php-plain"></i></div>
             </div>
         </div>
         
@@ -166,74 +84,68 @@
             </p>
         </div>
 
-        <div class=" container" id="education">
-            <h2 onclick="scrollAbove('education')">Education</h2>
+        <div class=" container" id="projects">
+            <h2 onclick="scrollAbove('projects')">Projects</h2>
+            <div class="project-carousel">
+                <button class="carousel-button left" onclick="scrollCarousel(-1)">&#10094;</button>
+                
+                <div class="carousel-track" id="carousel-track">
+                    <div class="project-card">
+                        <img src="assets/LiftSync-cutout.png" alt="LiftSync App Screenshot" class="project-image">
+                        <h3>LiftSync - Workout Tracker</h3>
+                        <div class="project-description">
+                            <p style="font-size: 0.9em;">
+                                Developed with Frederich De Koker as part of an independent study, this app allows users to track their workouts, manage routines, and sync progress using Firebase. Originally built in React Native and redesigned in Swift with enhanced unit tracking, custom profiles, and workout logging features.
+                            </p>
+                        </div>
+                        <a href="https://github.com/Rory3140/workout-tracker" target="_blank" class="view-button">View Project</a>
+                    </div>
 
-            <h3>Siena College, New York</h3>
-            <p>
-                I am currently in my senior year studying at Siena College where I have been awarded
-                both an Academic and a Sports Scholarship and have made the President's List and
-                the Dean's list twice. I am working towards a bachelor's degree in computer science with
-                a primary focus on software engineering and alongside this I am also minoring in
-                business.
-            </p>
-            <h4>Computer Science Classes</h4>
-            <div class="long-list">
-                <ul>
-                    <li>Software Development</li>
-                    <li>Web Development</li>
-                    <li>Web Design</li>
-                    <li>Advanced Programming</li>
-                    <li>Machine Learning</li>
-                    <li>Data Structures</li>
-                    <li>C programming with Unix</li>
-                    <li>Discrete Structures</li>
-                </ul>
-                <ul>
-                    <li>Database Management Systems</li>
-                    <li>Design and Analysis of Algorithms</li>
-                    <li>Mobile App Development</li>
-                    <li>Robotics</li>
-                    <li>Programming Languages</li>
-                    <li>Assembly Language and Computer Architecture</li>
-                    <li>Intro to python</li>
-                </ul>
+
+                    <div class="project-card">
+                        <img src="assets/healthcare-scheduler.png" alt="Healthcare Scheduler Architecture" class="project-image">
+                        <h3>Healthcare Scheduler System</h3>
+                        <div class="project-description">
+                            <p style="font-size: 0.9em;">
+                                Built with a real-world client in a team project for our Software Engineering class, this distributed healthcare scheduling system automates patient communication and appointment booking using LLMs, Twilio, and a suite of microservices managed through Docker.
+                            </p>
+                        </div>
+                        <a class="view-button hidden-button" aria-hidden="true">View Project</a>
+                    </div>                    
+
+                    <div class="project-card">
+                        <img src="assets/bouncing-ball.png" alt="Bouncing Ball App Screenshot" class="project-image">
+                        <h3>Bouncing Ball</h3>
+                        <div class="project-description">
+                            <p style="font-size: 0.9em;">
+                                A creative browser-based game where players use their phone's gyroscope to control a paddle on a separate display. The goal is to keep the ball bouncing and avoid letting it fall. Built entirely in JavaScript, with mobile syncing via QR code.
+                            </p>
+                        </div>
+                        <a href="https://github.com/Rory3140/bouncing-ball" target="_blank" class="view-button">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <img src="assets/task-sync.png" alt="Task-Sync App Screenshot" class="project-image">
+                        <h3>Task-Sync - Calendar App</h3>
+                        <div class="project-description">
+                            <p style="font-size: 0.9em;">
+                                A React Native iOS calendar and task management app built with Firebase as the backend. Designed for smooth scheduling, syncing, and mobile-first UX, this app is ready for App Store deployment and was developed as a solo project.
+                            </p>
+                        </div>
+                        <a href="https://github.com/Rory3140/task-sync" target="_blank" class="view-button">View Project</a>
+                    </div>
+                </div>
+                
+                <button class="carousel-button right" onclick="scrollCarousel(1)">&#10095;</button>
             </div>
-            <div class="spacer"></div>
-            <h3>Bangor Grammar School, Northern Ireland</h3>
-            <p>
-                Prior to college I attended Bangor Grammar School where I began studying Computer
-                Science at GCSE level and continued it into my A-Levels where I achieved an A*
-                Grade.
-            </p>
-            <div class="spacer"></div>
         </div>
 
-        <div class="container secondary-container" id="work-experience">
-            <h2 onclick="scrollAbove('work-experience')">Work Experience</h2>
-
-            <h3>
-                Student Assistant - Siena College Computer Science Department
-            </h3>
-            <h4>2022 - Present</h4>
-            <ul>
-                <li>Currently at college I have an on-campus job in the computer science department.</li>
-                <li>Consists of assisting professors in a diverse range of tasks such as conducting research and
-                    preparing material
-                    for classes.</li>
-            </ul>
-            <div class="spacer"></div>
-            <h3>
-                Student Tutor - Siena College Computer Science Department
-            </h3>
-            <h4>2023 - Present</h4>
-            <ul>
-                <li> Currently also have another on-campus job as a student tutor for the Advanced Programming, Intro to
-                    Java
-                    and Web Design classes after being recommended for the job by my professors.</li>
-                <li>Consists of assisting students with work and explaining various concepts to them.</li>
-            </ul>
-            <div class="spacer"></div>
+        <div class="container secondary-container" id="resume">
+            <h2 onclick="scrollAbove('resume')">Resume</h2>
+            <iframe src="assets/Rory_Wood_Resume.pdf" width="60%" height="800px" style="border: none;">
+                Your browser does not support PDFs. 
+                <a href="assets/Rory_Wood_Resume.pdf" target="_blank">Download the resume instead</a>.
+            </iframe>
         </div>
 
         <div class="container" id="contact">
@@ -249,7 +161,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Rory Wood</p>
+        <p>&copy; 2025 Rory Wood</p>
         <p>Email: <a href="mailto:rorywood9@live.com" target=”_blank”>rorywood9@live.com</a></p>
         <p>Website: <a href="http://www.rorywood.co.uk" target=”_blank”>www.rorywood.co.uk</a></p>
     </footer>
